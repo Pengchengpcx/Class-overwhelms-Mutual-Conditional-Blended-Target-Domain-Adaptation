@@ -1,6 +1,8 @@
 # Class-overwhelms-Mutual-Conditional-Blended-Target-Domain-Adaptation
 
-Official Implementation for the **AAAI-2023 Oral paper** [Class-overwhelms-Mutual-Conditional-Blended-Target-Domain-Adaptation](https://arxiv.org/abs/2302.01516)
+Official Implementation for the **AAAI-2023 Oral paper** 
+
+[Pengcheng Xu](https://github.com/Pengchengpcx), Boyu Wang, Charles Ling, [Class-overwhelms-Mutual-Conditional-Blended-Target-Domain-Adaptation](https://arxiv.org/abs/2302.01516)
 
 
 If you find our work useful in your research, please consider citing:
