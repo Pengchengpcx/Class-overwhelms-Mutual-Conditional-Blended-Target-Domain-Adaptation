@@ -5,6 +5,15 @@ Official Implementation for the **AAAI-2023 Oral paper**
 [Pengcheng Xu](https://github.com/Pengchengpcx), Boyu Wang, Charles Ling, [Class-overwhelms-Mutual-Conditional-Blended-Target-Domain-Adaptation](https://arxiv.org/abs/2302.01516)
 
 
+### Prerequisites:
+- python == 3.9.6
+- pytorch ==1.12.1
+- torchvision == 0.13.1
+- numpy, scipy, sklearn, PIL, argparse, tqdm
+
+
+
+
 If you find our work useful in your research, please consider citing:
 ```latex
 @article{xu2023class,
