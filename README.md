@@ -15,7 +15,7 @@ If you find our work useful in your research, please consider citing:
 }
 ```
 
-<img src="fig.png" width="900"/>
+<img src="fig.png" width="1000"/>
 
 ## License
 This repository is released under MIT License (see LICENSE file for details).
