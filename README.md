@@ -13,7 +13,7 @@ If you find our work useful in your research, please consider citing:
   journal={arXiv preprint arXiv:2302.01516},
   year={2023}
 }
-```latex
+```
 
 ## License
 This repository is released under MIT License (see LICENSE file for details).
