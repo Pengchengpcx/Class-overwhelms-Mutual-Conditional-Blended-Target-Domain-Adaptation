@@ -14,4 +14,5 @@ If you find our work useful in your research, please consider citing:
   year={2023}
 }
 
-
+## License
+This repository is released under MIT License (see LICENSE file for details).
