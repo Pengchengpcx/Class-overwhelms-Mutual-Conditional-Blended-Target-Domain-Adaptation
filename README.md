@@ -15,6 +15,8 @@ Official Implementation for the **AAAI-2023 Oral paper**
 ### Data Preparation
 - Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [DomainNet](http://ai.bu.edu/M3SDA/#dataset)
 
+- Add the system path into preparedata_lds.py and preparedata_uda.py in **datasets** and cada_styflip.py in **train**.
+
 ### Framework
 <img src="fig.png" width="1000"/>
 
