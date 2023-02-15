@@ -17,6 +17,22 @@ Official Implementation for the **AAAI-2023 Oral paper**
 
 - Add the system path into preparedata_lds.py and preparedata_uda.py in **datasets** and cada_styflip.py in **train**.
 
+- Create the log directory for each dataset
+
+```
+./logs/office-home-btlds
+./logs/domainnet
+./logs/office-home
+```
+
+### Training
+You can run the training file in **train** with
+```
+python train/cada_styflip.py --dataset office-home-btlds --bs_limit 64 --iter_epoch 500 --source 0 --catal --batch_size 1 --sub_log styflip_btlds_noaug --amp
+
+python train/cada_styflip.py --feat_dim 1024 --hid_dim 2048 --dataset domainnet --net resnet101 --iter_epoch 800 --source 0 --catal --batch_size 1 --bs_limit 256 --max_epoch 10 --sub_log styflip --amp
+```
+
 ### Framework
 <img src="fig.png" width="1000"/>
 
