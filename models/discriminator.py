@@ -31,13 +31,11 @@ class CatDomain(nn.Module):
         self.bn2 = nn.BatchNorm1d(hidden_size)
         self.relu2 = nn.ReLU()
         self.layer3 = nn.Linear(hidden_size, out_dim)
-        # self.sigmoid = nn.Sigmoid()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """"""
         x = self.relu1(self.bn1(self.layer1(x)))
         x = self.relu2(self.bn2(self.layer2(x)))
-        # y = self.sigmoid(self.layer3(x))
         y = self.layer3(x)
         
         return y

@@ -41,9 +41,7 @@ class ResNet(models.ResNet):
         x = self.layer4(x)
 
         x = self.avgpool(x)
-        # x = torch.flatten(x, 1)
         x = nn.Flatten()(x)
-        # x = x.view(-1, 2048)
         y = self.fc1(x)
         ca = self.fc2(y)
         return x, y, ca

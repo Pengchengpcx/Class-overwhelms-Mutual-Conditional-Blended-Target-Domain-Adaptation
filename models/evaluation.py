@@ -12,10 +12,7 @@ def cal_acc(encoder, test_set, args, logger=None):
             labels = image_folder['target']
             images = images.cuda()
             labels = labels.cuda()
-            if encoder.name == 'ResNet-IRM':
-                _,_,preds,preds_env = encoder(images)
-            else:
-                _,_,preds = encoder(images)
+            _,_,preds = encoder(images)
             loss += criterion(preds, labels).item()
 
             pred_cls = preds.data.max(1)[1]

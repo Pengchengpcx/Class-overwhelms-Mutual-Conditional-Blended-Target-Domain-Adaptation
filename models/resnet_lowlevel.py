@@ -21,7 +21,7 @@ class ResNet(models.ResNet):
         super(ResNet, self).__init__(*args, **kwargs)
         self._out_features = self.fc.in_features
         del self.fc
-        self.name = 'ResNet-SagNet'
+        self.name = 'ResNet-Lowlevel'
         self.avgpool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
         self.fc1 = bottleneck = nn.Sequential(
             nn.Linear(self._out_features, feat_dim),
@@ -57,14 +57,11 @@ class ResNet(models.ResNet):
             x_ex = torch.cat((x_style_random, x_t), dim=0)
         else:
             x_ex = x
-        # x_ex: [x_s_augstyle, x_t]
         x_ex = self.layer3(x_ex)
         x_ex = self.layer4(x_ex)
 
         x_ex = self.avgpool(x_ex)
-        # x = torch.flatten(x, 1)
         x_ex = nn.Flatten()(x_ex)
-        # x = x.view(-1, 2048)
         y = self.fc1(x_ex)
         ca = self.fc2(y)
         
