@@ -6,14 +6,8 @@ import torch.nn as nn
 from torchvision import models
 from torch.utils.model_zoo import load_url as load_state_dict_from_url
 from torchvision.models.resnet import BasicBlock, Bottleneck, model_urls
-from models.sagnet_randomizations import *
+from models.lowlevel_randomizations import *
 import copy
-
-'''
-ResNet for SagNet implementation, utilize the last residual blk feature for adaptation
-paper: Reducing Domain Gap by Reducing Style Bias, Augment only on the Source data
-Augment features without adversarial training
-'''
 
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
            'resnet152', 'resnext50_32x4d', 'resnext101_32x8d',

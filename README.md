@@ -31,6 +31,8 @@ You can run the training file in **train** with
 python train/cada_styflip.py --dataset office-home-btlds --bs_limit 64 --iter_epoch 500 --source 0 --catal --batch_size 1 --sub_log styflip_btlds_noaug --amp
 
 python train/cada_styflip.py --feat_dim 1024 --hid_dim 2048 --dataset domainnet --net resnet101 --iter_epoch 800 --source 0 --catal --batch_size 1 --bs_limit 256 --max_epoch 10 --sub_log styflip --amp
+
+
 ```
 
 ### Framework

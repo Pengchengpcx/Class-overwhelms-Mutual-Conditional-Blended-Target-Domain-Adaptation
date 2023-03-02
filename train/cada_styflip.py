@@ -12,7 +12,7 @@ import torch.optim as optim
 from datasets.preparedata_lds import build_dataset
 from torch.optim.lr_scheduler import LambdaLR
 from models.lr_scheduler import StepwiseLR
-from models.resnet_sagnet import *
+from models.resnet_lowlevel import *
 from models.discriminator import *
 from models.grl import *
 from models.evaluation import cal_accuracy, cal_acc
