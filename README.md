@@ -10,6 +10,7 @@ Official Implementation for the **AAAI-2023 Oral paper**
 - pytorch ==1.12.1
 - torchvision == 0.13.1
 - numpy, scipy, sklearn, PIL, argparse, tqdm
+- [RandAugment](https://github.com/ildoonet/pytorch-randaugment)
 
 
 ### Data Preparation
