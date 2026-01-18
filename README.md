@@ -41,10 +41,13 @@ python train/cada_styflip.py --feat_dim 1024 --hid_dim 2048 --dataset domainnet 
 
 If you find our work useful in your research, please consider citing:
 ```latex
-@article{xu2023class,
-  title={Class Overwhelms: Mutual Conditional Blended-Target Domain Adaptation},
+@inproceedings{xu2023class,
+  title={Class overwhelms: Mutual conditional blended-target domain adaptation},
   author={Xu, Pengcheng and Wang, Boyu and Ling, Charles},
-  journal={arXiv preprint arXiv:2302.01516},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={37},
+  number={3},
+  pages={3036--3044},
   year={2023}
 }
 ```
